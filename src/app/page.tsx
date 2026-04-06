@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import MominLanding from "./momin/MominLanding";
 
 export default function Home() {
-  redirect("/momin");
+  return <MominLanding />;
 }
