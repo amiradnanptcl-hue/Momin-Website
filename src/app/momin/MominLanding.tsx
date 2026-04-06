@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import {
   Smartphone, Cpu, Wrench, ShieldCheck, Zap, Monitor, Battery, Wifi,
   ChevronDown, ExternalLink, Award, Star, ArrowRight, Instagram, Facebook,
-  Globe, MapPin, Phone, Microscope, CircuitBoard, Settings, Send, Music,
+  Globe, MapPin, Mail, Phone, Microscope, CircuitBoard, Settings, Send, Music,
   MessageCircle,
 } from "lucide-react";
 import Image from "next/image";
@@ -594,10 +594,12 @@ function ContactSection() {
           <h2 className="mt-6 brutal-heading text-5xl md:text-7xl">{t("contact.title")}</h2>
           <p className="mt-6 text-[#09090B]/60 font-['Space_Grotesk'] text-lg max-w-xl mx-auto">{t("contact.desc")}</p>
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {[
               { href: "https://wa.me/923120123816", icon: MessageCircle, label: "WhatsApp", sub: "+92 312 0123816", color: "#25D366" },
               { href: "tel:+923120123816", icon: Phone, label: "Call Me", sub: "+92 312 0123816", color: "#09090B" },
+              { href: "mailto:contact@mominali.tech", icon: Mail, label: "Email", sub: "contact@mominali.tech", color: "#EA4335" },
+              { href: "https://www.mominali.tech", icon: Globe, label: "Website", sub: "www.mominali.tech", color: "#09090B" },
               { href: "https://t.me/MominAli512", icon: Send, label: "Telegram", sub: "@MominAli512", color: "#0088CC" },
               { href: "https://www.instagram.com/momin__512", icon: Instagram, label: "Instagram", sub: "@momin__512", color: "#E4405F" },
               { href: "https://www.facebook.com/share/1DhodbhHvZ/", icon: Facebook, label: "Facebook", sub: "Momin Ali", color: "#1877F2" },
@@ -636,10 +638,13 @@ function Footer() {
               iFix <span className="text-[#D2E823]">Expert</span>
             </span>
             <p className="text-[#F8F4E8]/40 text-sm font-['Space_Grotesk'] mt-1">Certified iPhone Technician — Level 1 & 2</p>
+            <p className="text-[#F8F4E8]/30 text-xs font-['Space_Grotesk'] mt-1">contact@mominali.tech &bull; www.mominali.tech</p>
           </div>
 
           <div className="flex items-center gap-3">
             {[
+              { href: "mailto:contact@mominali.tech", icon: Mail },
+              { href: "https://www.mominali.tech", icon: Globe },
               { href: "https://www.instagram.com/momin__512", icon: Instagram },
               { href: "https://www.facebook.com/share/1DhodbhHvZ/", icon: Facebook },
               { href: "https://www.tiktok.com/@momin_ali_512", icon: Music },
