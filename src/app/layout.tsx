@@ -28,8 +28,21 @@ const kugile = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ATOSHI Blockchain — Empower The World",
-  description: "Join 15M+ users in the ATOSHI community mining ecosystem. Mine ATOS tokens, zero fees, biometric wallet recovery.",
+  title: "Momin Ali — Certified iPhone Technician",
+  description: "Level 1 & 2 Certified Apple Device Repair Specialist from iPhone Fix Lab, Lahore. Screen repair, micro-soldering, board-level diagnostics.",
+  openGraph: {
+    title: "Momin Ali — Certified iPhone Technician",
+    description: "Level 1 & 2 Certified Apple Device Repair Specialist from iPhone Fix Lab, Lahore.",
+    images: [{ url: "/momin/og-image.jpg", width: 1200, height: 630 }],
+    type: "website",
+    url: "https://mominali.tech",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Momin Ali — Certified iPhone Technician",
+    description: "Level 1 & 2 Certified Apple Device Repair Specialist from iPhone Fix Lab, Lahore.",
+    images: ["/momin/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
